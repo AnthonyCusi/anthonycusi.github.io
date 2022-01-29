@@ -1,9 +1,13 @@
 h1 {
-    font-size: 5em;
+    font-family: 'Brush Script MT';
+    font-size: 4em;
+    text-align: center;
 }
 
-img {
-    height: 400px;
+h2 {
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+    text-align: center;
 }
 
 body {
@@ -11,18 +15,38 @@ body {
     color: rgb(4, 88, 4);
 }
 
-a {
-    color: blue;
-    text-decoration: none;
+p {
+    font-family: 'Trebuchet MS';
+    font-size: 17px;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Trebuchet MS';
+    display: table;
+    margin: 0 auto;
+    font-size: 17px;
+    text-align: left;
 }
 
 #profile-pic {
+    margin: auto;
+    display: block;
+    width: 350px;
     border: solid;
     padding: 10px 20px;
-    margin: 50px
 }
 
 .social-icon {
+    display: inline-block;
     height: 50px;
+}
+
+.socials {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 20px;
 }
 
