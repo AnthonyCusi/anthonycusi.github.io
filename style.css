@@ -1,3 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+header {
+    margin: 0;
+    overflow: auto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 12pt;
+}
+
 h1 {
     font-family: 'Brush Script MT';
     font-size: 4em;
@@ -11,17 +28,23 @@ h2 {
 }
 
 body {
-    background-color: rgb(235, 210, 177);
+    background-color: rgb(241, 218, 188);
     color: rgb(4, 88, 4);
+}
+
+p, ol, ul {
+    margin-top: 0;
 }
 
 p {
     font-family: 'Trebuchet MS';
     font-size: 17px;
     text-align: center;
+    padding: 75px;
 }
 
-ul {
+ol, ul {
+    padding: 0;
     font-family: 'Trebuchet MS';
     display: table;
     margin: 0 auto;
@@ -29,12 +52,56 @@ ul {
     text-align: left;
 }
 
+#top-header {
+    text-align: center;
+    height: 60px;
+}
+
 #profile-pic {
     margin: auto;
     display: block;
-    width: 350px;
+    width: 280px;
     border: solid;
-    padding: 10px 20px;
+    padding: 10px;
+}
+
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: rgb(4, 88, 4);
+}
+     
+#menu li{
+    display: inline-block;
+    padding: 0px;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{      
+    color: #FFF;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: rgb(4, 88, 4);
+    text-decoration: none;
 }
 
 .social-icon {
@@ -44,9 +111,12 @@ ul {
 
 .socials {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
     color: #333333;
     padding: 20px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1200px;
 }
 
