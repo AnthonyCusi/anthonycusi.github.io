@@ -7,18 +7,73 @@ header {
     overflow: auto;
 }
 
+/* #name {
+    background:  rgb(4, 88, 4);
+    margin: 8;
+    margin-left: -300;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    float: left;
+    margin-bottom: 0px;
+    padding-right: 0px;
+
+} */
+
+.name {
+    /* font-family: 'Inter Extrabold', sans-serif; */
+    font-family: 'Brush Script MT';
+    color: #FFF;
+    filter: drop-shadow(0px 9px 2px #143130);
+    padding-left: 10px;
+}
+
 body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    background: linear-gradient(46deg, #b5d5ff, #b5eaff, #b5eaff, #b5fff3, #1EAE98);
+    background-size: 1000% 1000%;
+  
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 45%}
+    50%{background-position:100% 56%}
+    100%{background-position:0% 45%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 45%}
+    50%{background-position:100% 56%}
+    100%{background-position:0% 45%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 45%}
+    50%{background-position:100% 56%}
+    100%{background-position:0% 45%}
+  }
+  
+  @keyframes Swoosh{
+    0%{left: 100px}
+    100%{left: 0px}
+  }
+/* body {
     margin: 0px;
     padding: 0px;
     background: #FFFFFF;
     font-family: 'Roboto';
     font-size: 12pt;
-}
+    
+} */
 
 h1 {
     font-family: 'Brush Script MT';
     font-size: 4em;
     text-align: center;
+    float: left;
 }
 
 h2 {
@@ -28,7 +83,7 @@ h2 {
 }
 
 body {
-    background-color: rgb(241, 218, 188);
+    background-color: rgb(240, 219, 193);
     color: rgb(4, 88, 4);
 }
 
@@ -52,25 +107,49 @@ ol, ul {
     text-align: left;
 }
 
+#bio {
+    float: left;
+    margin: 0 1.5%;
+    width: 500px;
+}
+
+#profile-pic {
+    margin: 30px;
+    padding-right: 40px;
+    padding-top: 40px;
+    float: left;
+    display: block;
+    width: 300px;
+    border: solid;
+    padding: 10px;
+
+}
+
+#courses {
+    clear: both;
+    padding-top: 50px;
+}
+
 #top-header {
     text-align: center;
     height: 60px;
 }
 
-#profile-pic {
-    margin: auto;
-    display: block;
-    width: 280px;
-    border: solid;
-    padding: 10px;
-}
 
 #menu{
     float: right;
-    width: 70%;
+    width: 100%;
     height: 100%;
     margin: none;
 }
+#name {
+    text-align: left;
+    font-size: 30px;
+    float: left;
+    margin: 10px;
+    color: white
+}
+
      
 #menu ul{
     text-align: center;
@@ -106,7 +185,8 @@ ol, ul {
 
 .social-icon {
     display: inline-block;
-    height: 50px;
+    height: 35px;
+    padding: 8px;
 }
 
 .socials {
@@ -118,5 +198,16 @@ ol, ul {
 .container {
     margin: 0px auto;
     width: 1200px;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background-color:rgb(4, 88, 4);
+
 }
 
