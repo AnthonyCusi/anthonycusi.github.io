@@ -66,6 +66,34 @@ header {
     background-color: #80C49D;
 }
 
+#page_title {
+    margin: 20px;
+}
+
+#project_name {
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    margin: 20px;
+}
+
+.project_desc {
+    font-family: 'Trebuchet MS';
+    font-size: 19px;
+    margin: 10px;
+    left:20px;
+}
+
+.project_link {
+    color: rgb(4, 88, 4);
+}
+
+.project_image {
+    height: 300px;
+}
+
+.project {
+}
+
 div.content {
     width: 1000px;
     margin: 0 auto;
