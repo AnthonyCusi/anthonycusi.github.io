@@ -80,7 +80,7 @@ header {
     font-family: 'Trebuchet MS';
     font-size: 19px;
     margin: 10px;
-    left:20px;
+    text-align: left;
 }
 
 .project_link {
@@ -89,6 +89,10 @@ header {
 
 .project_image {
     height: 300px;
+    padding: 10px;
+    border: #FFF;
+    border-radius: 20px;
+    position: relative;
 }
 
 .project {
