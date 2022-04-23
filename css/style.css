@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-@keyframes Swoosh{
-    0%{left: 100px}
-    100%{left: 0px}
-  }
 
 html, body {
     height: 100%;
@@ -14,32 +10,9 @@ header {
     overflow: auto;
 }
 
-.pulse {
-    background: transparent;
-    text-decoration: none;
-    padding: 20px 50px;
-    border: 3px solid rgb(4, 88, 4);
-    border-radius: 10px;
-    margin-left: 320px;
-    color: rgb(4, 88, 4);
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    animation-name: Swoosh;
-    transition: 0.5s ease;
-}
-
-.pulse:hover {
-    /* animation: pulsate 2s ease-in-out; */
-    box-shadow: inset 200px 0 0 0 rgb(193, 252, 193);
-}
-
-@keyframes pulsate {
-    0% {
-        box-shadow:
-        0 0 25px #5ddcff,
-        0 0 50px rgb(9, 122, 9);
-    }
-}
+* {
+    box-sizing: border-box; 
+  }
 
 .name {
     /* font-family: 'Inter Extrabold', sans-serif; */
@@ -49,62 +22,11 @@ header {
     padding-left: 10px;
 }
 
-.home_button {
-    text-decoration: none;
-    position: absolute;
-	display: inline-block;
-	font-size: 16px;
-	padding: 18px 40px;
-	color: white;
-	margin: 20px 10px 10px;
-	border-radius: 6px;
-	text-align: center;
-	transition: top .01s linear;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
-    background-color: #82c8a0;
-	box-shadow: 0 0 0 1px #82c8a0 
-    inset,
-		0 0 0 2px 
-    rgba(255,255,255,0.15) inset,
-			0 8px 0 0 rgba(126, 194, 155, .7),
-				0 8px 0 1px rgba(0,0,0,.4),
-				0 8px 8px 1px 
-        rgba(0,0,0,0.5);
-	}
-
-.home_button:active {
-    position: relative;
-    top: 9px;
-    box-shadow: 0 0 0 1px #82c8a0 
-    inset,
-			0 0 0 2px
-    rgba(255,255,255,0.15) inset,
-				0 0 0 1px rgba(0,0,0,0.4);
-	}
-
-.home_button:hover  {
-    background-color: #80C49D;
-}
-
-
-.container {
-    padding-top: 50px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 #page_title {
     padding-top: 50px;
     font-size: 40px;
     font-family: 'Montserrat';
     filter: drop-shadow(0px 2px 1px #143130);
-}
-
-#project_name {
-    font-size: 24px;
-    margin: 20px;
 }
 
 .project_desc {
@@ -125,25 +47,20 @@ header {
     position: relative;
 }
 
-.project {
-}
-
 div.content {
     width: 1000px;
     position: relative;
 }
 
-
 body {
-    margin: 0px;
-    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
     font-family: 'Montserrat';
-    background-size: 1000% 1000%;
     background-color: #fff;
     color: rgb(4, 88, 4);
     margin-left: 100px;
-    
-  
   }
 
 h1 {
@@ -292,17 +209,6 @@ ol, ul {
     background-color:rgb(4, 88, 4);
 
 }
-
-
-  * {
-    box-sizing: border-box; 
-  }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-  }
   #main {
     display: flex;
     flex: 1;
