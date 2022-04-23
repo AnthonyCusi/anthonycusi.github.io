@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@keyframes Swoosh{
+    0%{left: 100px}
+    100%{left: 0px}
+  }
+
 html, body {
     height: 100%;
 }
@@ -7,18 +14,32 @@ header {
     overflow: auto;
 }
 
-/* #name {
-    background:  rgb(4, 88, 4);
-    margin: 8;
-    margin-left: -300;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 35px;
-    float: left;
-    margin-bottom: 0px;
-    padding-right: 0px;
+.pulse {
+    background: transparent;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid rgb(4, 88, 4);
+    border-radius: 10px;
+    margin-left: 320px;
+    color: rgb(4, 88, 4);
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    animation-name: Swoosh;
+    transition: 0.5s ease;
+}
 
-} */
+.pulse:hover {
+    /* animation: pulsate 2s ease-in-out; */
+    box-shadow: inset 200px 0 0 0 rgb(193, 252, 193);
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow:
+        0 0 25px #5ddcff,
+        0 0 50px rgb(9, 122, 9);
+    }
+}
 
 .name {
     /* font-family: 'Inter Extrabold', sans-serif; */
@@ -29,7 +50,6 @@ header {
 }
 
 .home_button {
-    font-family: 'Roboto';
     text-decoration: none;
     position: absolute;
 	display: inline-block;
@@ -66,18 +86,28 @@ header {
     background-color: #80C49D;
 }
 
+
+.container {
+    padding-top: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #page_title {
-    margin: 20px;
+    padding-top: 50px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    filter: drop-shadow(0px 2px 1px #143130);
 }
 
 #project_name {
-    font-family: 'Trebuchet MS';
     font-size: 24px;
     margin: 20px;
 }
 
 .project_desc {
-    font-family: 'Trebuchet MS';
     font-size: 19px;
     margin: 10px;
     text-align: left;
@@ -100,17 +130,18 @@ header {
 
 div.content {
     width: 1000px;
-    margin: 0 auto;
+    position: relative;
 }
 
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     background-size: 1000% 1000%;
-    background-color: #c6f2ff;
+    background-color: #fff;
     color: rgb(4, 88, 4);
+    margin-left: 100px;
     
   
   }
@@ -133,33 +164,42 @@ p, ol, ul {
 }
 
 p {
-    font-family: 'Trebuchet MS';
+    font-family: 'Montserrat';
     font-size: 17px;
     text-align: center;
     padding: 75px;
 }
 
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
 ol, ul {
     padding: 0;
-    font-family: 'Trebuchet MS';
+    font-family: 'Montserrat';
     display: table;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
 }
 
 #bio {
     float: left;
     padding-left: 30px;
-    width: 55%;
+    width: 60%;
 }
 
 #profile-pic {
-    margin: 30px;
-    padding-right: 50px;
-    padding-top: 40px;
-    float: right;
-    display: block;
+    margin: 70px;
     width: 300px;
     border: solid;
     padding: 10px;
@@ -180,13 +220,14 @@ ol, ul {
     float: right;
     width: 100%;
     height: 100%;
-    margin: none;
+    margin: -16px;
 }
 #name {
     text-align: left;
     font-size: 30px;
     float: left;
     margin: 10px;
+    margin-left: -16px;
     color: white
 }
 
@@ -224,15 +265,16 @@ ol, ul {
 }
 
 .social-icon {
-    display: inline-block;
-    height: 35px;
-    padding: 8px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    height: 45px;
+    color: #fcfafa;
 }
 
 .socials {
     text-align: center;
     color: #333333;
-    padding: 20px;
+    padding: 30px;
 }
 
 .container {
@@ -251,3 +293,43 @@ ol, ul {
 
 }
 
+
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+    padding: 50px;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 30vw;
+  }
+  #main > nav {
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    padding: 50px;
+    order: 2;
+  }
+
+  footer {
+    background: rgb(4, 88, 4);
+    height: 60px;
+    color: white;
+  }
+  footer, article, nav, aside {
+    padding: 1em;
+  }
