@@ -1,282 +1,274 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Cusimano | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20fill='%236B46C1'/%3E%3Cpolyline%20points='15,70%2035,45%2055,55%2075,30%2090,40'%20fill='none'%20stroke='%23ffffff'%20stroke-width='6'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6B46C1',
+                        secondary: '#9F7AEA'
+                    }
+}
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <custom-navbar></custom-navbar>
     
-    <title>Portfolio | Anthony Cusimano</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.70.0" />
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-
-    <meta property="og:title" content="Anthony's Portfolio" />
-    <meta property="og:description" content="A collection of my interesting projects." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://anthonycusi.github.io" />
-    <meta property="og:updated_time" content="2020-05-09T10:58:08-04:00" />
-    <meta itemprop="name" content="Anthony's Portfolio">
-    <meta itemprop="description" content="A collection of my interesting projects."><meta name="twitter:card" content="summary"/>
-  
-  
-    <link href="dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="icon" href="images/6178801591537356025.svg" type="image/x-icon">
-
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-  <header class="cover bg-top" style="background-image: url('https://media0.giphy.com/media/PS7TYMPnOtt8lKHPim/giphy.gif?cid=790b76112c6079996af0a6c5711dceec4cabf170144fcb49&rid=giphy.gif&ct=g');">
-  
-    <!-- Nav Bar -->
-    <div class="navbar">
-      <a href="https://anthonycusi.github.io" class="f3 fw4 hover-white no-underline white-80 dib">Projects</a>
-      <a href="research.html" class="f3 fw4 hover-white no-underline white-80 dib">Research</a>
-      <a href="https://drive.google.com/file/d/1iKJNgJzC7_-chyOWdx46bDVUxze8bhkB/view?usp=sharing" target="_blank" class="f3 fw4 white-80 no-underline dib hover-white header_ext" >Resume </a>
-    </div>
-
-
-
-    <div class="bg-black-60">
-      <nav class="pv3 ph3 ph4-n" role="navigation">
-        <div class="flex-l justify-between items-center center">
-          <!-- <a href="https://anthonycusi.github.io" class="f3 fw2 hover-white no-underline white-90 dib" viewBox="0 0 512 512">
-            Projects
-          </a>
-
-          <a href="research.html" class="f3 fw2 hover-white no-underline white-90 dib" viewBox="0 0 512 512">
-            Research
-          </a> -->
-          
-        <!-- <div class="flex-l items-center"> -->
-
-        <ul class="pl0 mr3">
-          <!-- <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="https://anthonycusi.github.io/post/" title="Projects page">
-              Projects
-            </a>
-          </li> -->
-          
-          <!-- <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90 header_ext" href="Anthony Cusimano's Resume.pdf" target="_blank" title="Resume">
-              Resume
-            </a>
-          </li> -->
-        </ul>
-        
-
-    <!-- Header Links -->
-    <div style="font-size: 30px">
-      <a href="https://www.linkedin.com/in/anthonycusi/" target="_blank" class="link-transition link pt2 dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-        <i class="ri-linkedin-fill icon"></i>
-      </a>
-
-      <a href="https://github.com/AnthonyCusi" target="_blank" class="link-transition link pt2 dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-        <i class="ri-github-fill icon"></i>
-      </a>
-
-    </div>
-  </div>
-  </nav>
-
-    <!-- Heading and subheading -->
-    <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-      <h1 class="f2 avenir f-subheadline-l fw4 white-90 mb0 lh-title">
-        Anthony's Portfolio
-      </h1>
-      
-        <h2 class="fw1 avenir f5 f3-l white-80 measure-wide-l center mt3">
-          A collection of my interesting projects.
-        </h2>
-
-      </div>
-    </div>
-  </header>
-
-
-  <!-- Bio -->
-  <main class="pb7" role="main">
-  <article class="cf ph3 ph5-l pv3 pv4-l avenir f4 tc-l center w-75 lh-copy near-black bio">
-    <p class="center w-75">Hi! I'm Anthony Cusimano, an undergraduate data science major at the University of California, Irvine. Through my courses, projects, and hobbies, I hope to work up to being a data scientist, further exploring my interest in programming, statistics, and analytics. </p>
-  </article>
-
-    
-  <!-- Project Portfolio -->
-  <article class ="dark-blue center w-100 pa2-ns w-70-ns section-title">
-    <h1 class="flex-none">
-      Recent Projects
-    </h1>
-  </article> 
-
-  <div class="pa1 pa4-ns w-100 w-70-ns center">
-
-    <section class="w-100 mw8">
-    <div class="relative w-100 mb4">
-
-    <!-- Yelp Analysis -->
-    <article class="bb b--black-10">
-      <div class="db ph2 ph0-l no-underline light-silver first-proj">
-        <div class="flex flex-column flex-row-ns">
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between mb-24">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Turning Data <span class="text-primary">Into Action</span></h1>
+                <p class="text-xl text-gray-600 mb-8">I'm a passionate data scientist specializing in machine learning, data visualization, and predictive analytics.</p>
+                <div class="flex items-center space-x-4">
+                    <div class="flex space-x-4">
+                    <a href="#projects" class="bg-primary hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">View Projects</a>
+                    <a href="#contact" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+                    </div>
             
-            <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <a href="https://colab.research.google.com/drive/1CTo4QZN6eb1K3oLFgnM4y4rGLHHrOEf8?usp=sharing" class="db grow" target="_blank">
-                <img src="images/yelp-analysis.png" class="img" alt="Image of Monkeypox Dashboard">
-              </a>
-            </div>
-          
-          <div class="blah w-100 w-60-ns pl3-ns">
-            <h1 class="f3 fw1 athelas mt0 lh-title">
-              <a href="https://colab.research.google.com/drive/1CTo4QZN6eb1K3oLFgnM4y4rGLHHrOEf8?usp=sharing" class="near-black dim link" target="_blank">
-                Exploratory Data Analysis: Investigating Yelp's Open Dataset
-                </a>
-            </h1>
-            <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-              <li class="avenir near-black">Analyzes key features of Yelp's data for businesses, users, and reviews</li>
-              <li class="avenir near-black">Incorporates bar graphs, regression plots, line graphs, and pie charts to answer investigative questions</li>
-              <li class="avenir near-black">Created with Python (Pandas, Matplotlib, Seaborn) </li>
-            </div>
-            <br>
-              <a href="https://colab.research.google.com/drive/1CTo4QZN6eb1K3oLFgnM4y4rGLHHrOEf8?usp=sharing" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">View on Colab</a>
-              <a href="https://www.yelp.com/dataset" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">Access the Dataset</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <br>
-    
-    <!-- Monkeypox Dashboard -->
-    <article class="bb b--black-10">
-      <div class="db ph2 ph0-l no-underline light-silver first-proj">
-        <div class="flex flex-column flex-row-ns">
             
-            <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <a href="https://monkeypox-dash.streamlit.app/" class="db grow" target="_blank">
-                <img src="images/Monkeypox Dashboard.png" class="img" alt="Image of Monkeypox Dashboard">
-              </a>
             </div>
-          
-          <div class="blah w-100 w-60-ns pl3-ns">
-            <h1 class="f3 fw1 athelas mt0 lh-title">
-              <a href="https://monkeypox-dash.streamlit.app/" class="near-black dim link" target="_blank">
-                "Monkeypox Dashboard": Interactive Outbreak Dashboard
-                </a>
-            </h1>
-            <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-              <li class="avenir near-black">Aggregates current data across the web on one easily accessible page</li>
-              <li class="avenir near-black">Utilizes web scraping, data cleaning & manipulation, and analysis</li>
-              <li class="avenir near-black">Created with Python (Pandas, NumPy, Matplotlib, GeoPandas, Seaborn, Streamlit API) </li>
-            </div>
-            <br>
-              <a href="https://github.com/AnthonyCusi/Monkeypox-Dashboard" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">View on GitHub</a>
-              <a href="https://monkeypox-dash.streamlit.app/" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">Monkeypox Dashboard Site</a>
-          </div>
         </div>
-      </div>
-    </article>
-
-    <!-- Motion Trivia -->
-    <article class="bb b--black-10">
-      <div class="db pv4 ph3 ph0-l no-underline light-silver">
-        <div class="flex flex-column flex-row-ns">
-          
-            <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <a href="https://github.com/AnthonyCusi/Motion-Trivia" target = "_blank" class="db grow">
-                <img src="images/Screen Shot 2022-06-23 at 5.07.19 PM.png" class="img" alt="Screenshot of the Motion Trivia game">
-              </a>
-            </div>
-          
-          <div class="blah w-100 w-60-ns pl3-ns">
-            <h1 class="f3 fw1 athelas mt0 lh-title">
-              <a href="https://github.com/AnthonyCusi/Motion-Trivia" target = "_blank" class="near-black dim link">
-                "Motion Trivia": Trivia Game with Facial Tracking
-              </a>
-            </h1>
-            <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-              <li class="avenir near-black">Trivia game played by moving your head to the correct side of the screen</li>
-              <li class="avenir near-black">Gained familiarity with motion tracking and API implementation </li>
-              <li class="avenir near-black">Built with Python (OpenCV, Python's threading module) and the Open Trivia Database API</li>
-            </div>
-            <br>
-              <a href="https://github.com/AnthonyCusi/Motion-Trivia" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">View on GitHub</a>
-
-          </div>
-        </div>
-      </div>
-    </article>         
-
-    <!-- Quizify -->
-    <article class="bb b--black-10">
-      <div class="db pv4 ph3 ph0-l no-underline light-silver">
-        <div class="flex flex-column flex-row-ns">
-          
-              
-            
-            <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <a href="https://github.com/norombabajd/quizify-zothacks" class="db grow" target="_blank">
-                <img src="images/quizify_vid.gif" class="img" alt="GIF of Quizify demo">
-              </a>
-            </div>
-          
-          
-          <div class="blah w-100 w-60-ns pl3-ns">
-            <h1 class="f3 fw1 athelas mt0 lh-title">
-              <a href="https://github.com/norombabajd/quizify-zothacks" class="near-black dim link" target="_blank">
-                "Quizify": ZotHacks Hackathon 'Hacker's Choice' Winner
-                </a>
-            </h1>
-            <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-              <li class="avenir near-black">Personalized lyric-based trivia game using users' Spotify history</li>
-              <li class="avenir near-black">Did back-end development; implemented Spotify & Musixmatch APIs</li>
-              <li class="avenir near-black">Built with Python, HTML/CSS, JavaScript, Flask, and Heroku</li>
-            </div>
-            <br>
-              <a href="https://github.com/norombabajd/quizify-zothacks" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">View on GitHub</a>
-              <a href="https://devpost.com/software/quizify-6detoa#updates" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">Devpost Submission</a>
-              <a href="https://www.ics.uci.edu/community/news/view_news?id=2084" target="_blank" class="ba b--dark-blue bg-light-gray br2 dark-blue dib f7 hover-bg-light-blue link mt2 ph2 pv1 external">Featured at UCI!</a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-  </div>
-  </section>
-  </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-dark-blue bottom-0 w-100 pa3" role="contentinfo">
-    <div class="flex justify-between">
-    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://github.com/AnthonyCusi/anthonycusi.github.io/" >
-      Anthony Cusimano
-    </a>
-    <div>
-
-    <!-- Footer links -->
-    <a href="https://www.linkedin.com/in/anthonyccusimano/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-      <svg height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-      </svg>
-
-      <span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-        <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-      </svg>
-      </span>
-    </a>
-
-    <a href="https://github.com/AnthonyCusi" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
-      <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-        <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-      </svg>
-
-      <span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-        <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-      </svg>
-      </span>
-    </a>
-
-
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-primary rounded-full opacity-10 absolute -top-4 -left-4"></div>
+                    <img src="images/pfp.jpg" alt="Profile Picture" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full relative z-10 border-4 border-white shadow-xl hovered-element">
 </div>
-  </div>
-</footer>
-  <script src="https://anthonycusi.github.io/dist/js/app.3fc0f988d21662902933.js"></script>
-  </body>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-24" id="skills">
+            <h2 class="text-3xl font-bold mb-12 text-center">My <span class="text-primary">Data Science</span> Toolkit</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-10 h-10 mr-3" alt="Pandas">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-10 h-10 mr-3" alt="NumPy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-10 h-10" alt="MySQL">
+                    </div>
+                    <h3 class="font-bold mb-2">Data Wrangling</h3>
+                    <p class="text-gray-600 text-sm">Turning massive datasets into clean, analysis-ready form.</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">ETL Pipelines</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Feature Engineering</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Data Cleaning</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 mr-3" alt="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" class="w-10 h-10 mr-3" alt="scikit-learn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="w-10 h-10" alt="TensorFlow">
+                    </div>
+                    <h3 class="font-bold mb-2">Machine Learning</h3>
+                    <p class="text-gray-600 text-sm">Training models to solve complex problems.</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Classification</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Prediction Modeling</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Clustering</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Neural Networks</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="images/matplotlib-logo.png" class="w-10 h-10 mr-3" alt="Matplotlib">
+                        <img src="images/seaborn-logo.svg" class="w-10 h-10 mr-3" alt="Plotly">
+                        <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" class="w-10 h-10" alt="Streamlit">
+                    </div>
+                    <h3 class="font-bold mb-2">Data Visualization</h3>
+                    <p class="text-gray-600 text-sm">Designing visuals to tell the story behind the numbers.</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Interactive Dashboards</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Streamlit Apps</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Plots and Charts</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                            <img src="images/aws-logo.png" class="w-10 h-6 mr-3" alt="AWS">
+                            <img src="images/databricks-logo.png" class="w-8 h-8 mr-3" alt="Databricks">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-10 h-10" alt="GCP">
+                        </div>
+                    <h3 class="font-bold mb-2">Cloud Computing</h3>
+                    <p class="text-gray-600 text-sm">Deploying scalable pipelines to run reliably in production.</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">SageMaker</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">DataBricks</span>
+                        <span class="bg-gray-100 text-xs px-2 py-1 rounded">GCP</span>
+                    </div>
+                </div>
+</div>
+        </section>
+        <!-- Education Section -->
+        <section class="mb-24" id="education">
+            <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-primary">Education</span></h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
+                        <div class="w-20 h-20 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-4">
+                            <img src="images/ucla-logo.jpg" alt="UCLA" class="w-24 h-24 object-cover transform">
+                        </div>
+                        <p class="text-sm text-gray-500">2025 - 2027</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2">University of California, Los Angeles</h3>
+                        <p class="text-secondary font-medium mb-2">M.S. Data Science Engineering</p>
+                        <p class="text-gray-600"></p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Artificial Intelligence</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Deep Learning</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Big Data Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
+                        <div class="w-20 h-20 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-4 overflow-hidden">
+                            <img src="images/uci-logo.png" alt="UC Irvine" class="w-22 h-22 object-cover transform -translate-x-0.3">
+                        </div>
+                        <p class="text-sm text-gray-500">2021 - 2025</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2">University of California, Irvine</h3>
+                        <p class="text-secondary font-medium mb-2">B.S. Data Science</p>
+                        <p class="text-gray-600"></p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Statistics</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Machine Learning</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Data Mining</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Linear Algebra</span>
+                            <span class="bg-gray-100 text-xs px-2 py-1 rounded">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+</div>
+        </section>
+
+        <!-- Projects Section -->
+<section class="mb-24" id="projects">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured <span class="text-primary">Projects</span></h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Behavioral Clustering -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/UROP Poster - Anthony Cusimano.png" alt="UROP Poster" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Behavioral Clustering of LMS Clickstream Sequences</h3>
+                        <p class="text-gray-600 mb-4">Designed a clustering pipeline for 2M+ clickstreams to uncover student learning patterns. Featured in the <b>2025 AAAI Conference's AI for Education Workshop</b>.</p>
+                        <div class="flex items-center gap-4">
+                            <a href="https://drive.google.com/file/d/1VUk4_55RgGEN79o-GOarnxFV6RfP76s8/view?usp=sharing" target="_blank" class="text-primary font-medium flex items-center">View Poster<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                            <a href="https://drive.google.com/file/d/1vP3vopeyvbyW5bKyCJ6XJhmmqf7toqp2/view" target="_blank" class="text-primary font-medium flex items-center">View Paper<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                            <a href="https://ai4ed.cc/workshops/aaai2025" target="_blank" class="text-primary font-medium flex items-center">AAAI Workshop<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MPN Symptoms Poster -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/socal_data.png" alt="MPN Symptoms" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Mediterranean vs DASH Diets on MPN Symptoms</h3>
+                        <p class="text-gray-600 mb-4">Collaborated with the Fleischman Lab to investigate effects of diet on symptom reduction speed in patients with Myeloproliferative Neoplasms. Presented at <b>UC Irvine and CSU Fullerton's Data Science Symposiums</b>.</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://drive.google.com/file/d/1yxt1mjO88I830u1mI59zkuuDkuc6zxQg/view?usp=sharing" target="_blank" class="text-primary font-medium flex items-center">View Poster<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                            <a href="https://www.mpnlab.org/" target="_blank" class="text-primary font-medium flex items-center">Fleischman Lab<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quizify -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/quizify_vid.gif" alt="Quizify" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Quizify</h3>
+                        <p class="text-gray-600 mb-4">Personalized lyric-based trivia using Spotify and Musixmatch integration. <b>Winner of 2021 ZotHacks Hackathon 'Hacker's Choice' Award</b>.</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://devpost.com/software/quizify-6detoa" target="_blank" class="text-primary font-medium flex items-center">Devpost<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                            <a href="https://github.com/norombabajd/quizify-zothacks" target="_blank" class="text-primary font-medium flex items-center">Github<i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yelp Analysis -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/yelp-analysis.png" alt="Yelp Analysis" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Exploratory Data Analysis: Yelp Open Dataset</h3>
+                        <p class="text-gray-600 mb-4">Analyzed Yelp's dataset to surface business and review patterns using Pandas and Matplotlib.</p>
+                        <a href="https://colab.research.google.com/drive/1CTo4QZN6eb1K3oLFgnM4y4rGLHHrOEf8?usp=sharing" target="_blank" class="text-primary font-medium flex items-center">View on Colab <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Monkeypox Dashboard -->
+                <!-- <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/Monkeypox Dashboard.png" alt="Monkeypox Dashboard" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">"Monkeypox Dashboard": Interactive Outbreak Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Aggregates live outbreak data into an interactive Streamlit app for easy monitoring.</p>
+                        <a href="https://monkeypox-dash.streamlit.app/" target="_blank" class="text-primary font-medium flex items-center">View Site <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                    </div>
+                </div> -->
+
+                <!-- Motion Trivia -->
+                <!-- <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/Screen Shot 2022-06-23 at 5.07.19 PM.png" alt="Motion Trivia" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">"Motion Trivia": Trivia Game with Facial Tracking</h3>
+                        <p class="text-gray-600 mb-4">A head-motion controlled trivia game built with OpenCV and web APIs.</p>
+                        <a href="https://github.com/AnthonyCusi/Motion-Trivia" target="_blank" class="text-primary font-medium flex items-center">View on GitHub <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                    </div>
+                </div> -->
+
+                
+
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mb-24" id="contact">
+            <div class="bg-gradient-to-r from-purple-800 to-purple-600 rounded-2xl p-8 md:p-12 text-white">
+<div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+                    <p class="mb-8 opacity-90">Have a data challenge? I'd love to hear about your project and how I can help.</p>
+                    <form id="contact-form" class="space-y-4" method="POST" action="https://formspree.io/f/mgowoeww">
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-white bg-opacity-10 border border-white border-opacity-20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-white bg-opacity-10 border border-white border-opacity-20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="Website contact form submission">
+                        <button type="submit" class="bg-white text-primary hover:bg-opacity-90 px-6 py-3 rounded-lg font-medium transition duration-300 w-full md:w-auto">Send Message</button>
+                        <div id="form-status" class="mt-3 text-sm text-white"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <custom-footer></custom-footer>
+    <custom-modal></custom-modal>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/modal.js"></script>
+    <script src="script.js"></script>
+<script>
+        feather.replace();
+    </script>
+</body>
 </html>
